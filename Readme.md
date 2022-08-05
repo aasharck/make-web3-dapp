@@ -12,6 +12,10 @@ npx make-web3-dapp my-app
 ## Usage
 1. Deploy your contract by executing the command
 ```
+npm run deploy
+``` 
+Or
+```
 npx hardhat run src/backend/scripts/deploy.js
 ```
 2. Once Deployed the ABI and contract address will be stored in a folder called contractsData in the frontend folder.
@@ -28,4 +32,4 @@ aasharck - aasharck@gmail.com
 
 Project Link: https://github.com/aasharck/make-web3-dapp.git
 
-#### Forked and Modified - Thanks Dapp University!
+#### Forked and Modified - All Thanks to [Dapp University](https://github.com/dappuniversity/starter_kit_2)!
