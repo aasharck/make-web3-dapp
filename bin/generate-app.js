@@ -39,11 +39,11 @@ try {
 
       console.log('Removing useless files');
       execSync('npx rimraf ./.git');
-      fs.rmdirSync(path.join(projectPath, 'bin'), { recursive: true});
+      fs.rm(path.join(projectPath, 'bin'), { recursive: true }, (error) => {console.log(error)});
       
-      console.log('=================================================');
+      console.log('=====================================================');
       console.log('All Done! Web3 Dapp Boilerplate successfully Created!');
-      console.log('=================================================');
+      console.log('=====================================================');
 
     } catch (error) {
       console.log(error);
