@@ -1,6 +1,6 @@
 {
   "name": "make-web3-dapp",
-  "version": "1.0",
+  "version": "1.0.0",
   "private": false,
   "dependencies": {
     "@babel/preset-react": "^7.18.6",
