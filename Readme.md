@@ -1,6 +1,6 @@
 # make-web3-dapp
 
-#### The fastest way to build, test and deploy your smart contracts with Hardhat and Reactjs
+The fastest way to build, test and deploy your smart contracts with Hardhat and Reactjs
 
 ## Getting Started
 
@@ -23,4 +23,9 @@ npx hardhat run src/backend/scripts/deploy.js
 npm start
 ```
 
-### Forked and Modified - Thanks Dapp University!
+## Contact
+aasharck - aasharck@gmail.com
+
+Project Link: https://github.com/aasharck/make-web3-dapp.git
+
+#### Forked and Modified - Thanks Dapp University!
