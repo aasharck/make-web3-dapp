@@ -1,12 +1,26 @@
-# React-Web3 BoilerPlate
+# make-web3-dapp
 
-### The fastest way to build, test and deploy your smart contracts with Hardhat and Reactjs
+#### The fastest way to build, test and deploy your smart contracts with Hardhat and Reactjs
 
-## Setup
+## Getting Started
 
-1. Clone this repository
-2. Run *npm install*
-3. Change the code as you wish!
-4. In the deploy.js file in the scripts folder, we are automatically saving the ABI and the contract address in a folder. This makes development faster and easier
+To create a Web3 dapp Boilerplate - Just execute the following command in your terminal.
+```
+npx make-web3-dapp my-app
+```
 
-### Forked from Dapp University!
+## Usage
+1. Deploy your contract by executing the command
+```
+npx hardhat run src/backend/scripts/deploy.js
+```
+2. Once Deployed the ABI and contract address will be stored in a folder called contractsData in the frontend folder.
+
+3. You may import it in your js files later
+
+4. Start your Dapp by
+```
+npm start
+```
+
+### Forked and Modified - Thanks Dapp University!

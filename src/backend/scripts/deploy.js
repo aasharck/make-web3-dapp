@@ -5,11 +5,17 @@ async function main() {
   console.log("Deploying contracts with the account:", deployer.address);
   console.log("Account balance:", (await deployer.getBalance()).toString());
 
+  //You may remove the below
+  const lockedAmount = 1000000000; //1 GWEI
+  const unlockTime = (Date.now()) + 365 * 24 * 60 * 60;
+
   // deploy contracts here:
-  
-  
+  const Contract = await ethers.getContractFactory('Lock');
+  const contract = await Contract.deploy(unlockTime, { value: lockedAmount });
+
+  console.log("Contract was deployed to Address: ", contract.address);
   // For each contract, pass the deployed contract and name to this function to save a copy of the contract ABI and address to the front end.
-  saveFrontendFiles();
+  saveFrontendFiles(contract, 'Lock');
 }
 
 function saveFrontendFiles(contract, name) {
