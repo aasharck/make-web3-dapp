@@ -47,6 +47,6 @@
     "@babel/preset-env": "^7.18.9"
   },
   "bin": {
-    "create-boilerplate": "./generate-app.js"
+    "make-web3-dapp": "./bin/generate-app.js"
   }
 }
